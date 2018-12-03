@@ -1,0 +1,29 @@
+#include <stdio.h>
+     
+     int main(){
+         int n1, n2, n3, t, media, m;
+         scanf("%d", &n1);
+         scanf("%d", &n2);
+         scanf("%d", &n3);
+         scanf("%d", &t);
+         m=10;
+       
+        if(n1 <= m){
+            m=n1;
+            media = (n2+n3+t)/3;
+        } if(n2 <= m){
+            m=n2;
+            media= (n1+n3+t)/3;
+        }if (n3 <=m){
+            m=n3;
+            media = (n2+n1+t)/3;
+        }
+        
+        if( media >= 7){
+            printf("Aprovado(a) com %d", media);
+        } else if  (media >= 4 && media <= 7) {
+            printf("Final com %d", media);
+        } else {
+            printf("Reprovado(a) com %d", media);
+  }
+  }
