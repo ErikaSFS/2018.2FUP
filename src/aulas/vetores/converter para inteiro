@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+
+int main(){
+    int i, n, v[100];
+    scanf("%d" , &n);
+    /*inserir dados no vetor*/
+    for(i=0; i<n; i++){
+        scanf("%d", &v[i]);
+    }
+    for (i=0; i <n; i++){
+        printf("%d", v[i]);
+    }
+}
