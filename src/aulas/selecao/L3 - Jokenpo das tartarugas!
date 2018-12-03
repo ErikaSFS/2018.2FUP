@@ -1,0 +1,15 @@
+include <stdio.h>
+    
+     int main(){
+         int jog1, jog2;
+         scanf("%d", &jog1);
+         scanf("%d", &jog2);
+         
+         if ((jog1 == 1 && jog2 ==3) || (jog1 == 3 && jog2== 2) || (jog1 ==2 && jog2 ==1)) {
+             printf("jog1");
+        } else if ((jog1 ==3 && jog2 == 1)|| (jog1 == 1 && jog2 == 2)|| (jog1 == 2 && jog2 == 3)){
+            printf("jog2");
+        } else {
+            printf("empate");
+        }
+        }
