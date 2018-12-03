@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int primo(int n){
+    int d;
+    int ehprimo;
+    
+     d = 2;
+    ehprimo = 1;
+    
+    if (n <= 1)
+	ehprimo = 0;
+
+    while (ehprimo == 1 && d <= n / 2) {
+	  if (n % d  == 0)
+	    ehprimo = 0;
+	    d++;
+    }
+
+    if (ehprimo == 1){
+        return 1;
+    
+    } else  {
+
+    return 0;
+}
+    
+    } 
